@@ -5,7 +5,7 @@ champ_label.pack()
 bouton=Button(fenetre,text="Quitter", command=fenetre.destroy)
 bouton.pack()
 "fenetre.mainloop()"
-cv=Canvas(fenetre,width=1000,height=1000,background="white")
+cv=Canvas(fenetre,width=1250,height=400,background="white")
 cv.pack()
 
 
@@ -20,7 +20,3 @@ def carre(decalx,decaly,long, intern):
 def triangle(decalx,decaly,long, intern):
     extern=intern
     cv.create_polygon(decalx,decaly+long,decalx+(long/2),decaly,decalx+long,decaly+long, fill=intern, outline=extern)
-    
-carre(50,500,100,"red")
-cercle(200,500,100,"green")
-triangle(350,500,100,"blue")
