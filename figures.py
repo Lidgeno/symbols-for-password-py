@@ -1,6 +1,6 @@
 from tkinter import *
 fenetre = Tk()
-champ_label = Label(fenetre, text="c'est ici que ça se passe",fg="green")
+champ_label = Label(fenetre, text="affichage des figures indiquées",fg="blue")
 champ_label.pack()
 bouton=Button(fenetre,text="Quitter", command=fenetre.destroy)
 bouton.pack()
